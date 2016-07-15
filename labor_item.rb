@@ -11,10 +11,4 @@ class LaborItem < JobItem
     @employee.rate
   end
 
-  protected
-
-  def labor?
-    true
-  end
-
 end

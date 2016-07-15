@@ -11,10 +11,4 @@ class JobItem
     unit_price * @quantity
   end
 
-  protected
-
-  def labor?
-    false
-  end
-
 end
