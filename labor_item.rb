@@ -7,6 +7,10 @@ class LaborItem < JobItem
     @employee = employee
   end
 
+  def unit_price
+    @employee.rate
+  end
+
   protected
 
   def labor?
