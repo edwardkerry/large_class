@@ -7,4 +7,8 @@ class LaborItem < JobItem
     @employee = employee
   end
 
+  def labor?
+    true
+  end
+
 end

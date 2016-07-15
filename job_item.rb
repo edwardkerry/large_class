@@ -16,8 +16,10 @@ class JobItem
     labor? ? @employee.rate : @unit_price
   end
 
+  protected 
+
   def labor?
-    @is_labor
+    false
   end
 
 end
