@@ -2,10 +2,9 @@ class JobItem
 
   attr_reader :quantity
 
-  def initialize(unit_price, quantity, is_labor=false)
+  def initialize(unit_price, quantity)
     @unit_price = unit_price
     @quantity = quantity
-    @is_labor = is_labor
   end
 
   def total_price
@@ -16,7 +15,7 @@ class JobItem
     labor? ? @employee.rate : @unit_price
   end
 
-  protected 
+  protected
 
   def labor?
     false
